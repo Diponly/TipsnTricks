@@ -21,7 +21,7 @@ Way to deploy model
 
 Preprocessing :- 
 
- Numeric Data  feature preprocessing : - 
+>>>>>  Numeric Data  feature preprocessing : - 
    [[ a . Tree based models doesn't depend on scaling
       b . Non Tree based models hugely depend on scaling
    ]]
@@ -44,3 +44,20 @@ Preprocessing :-
    
    1 > Combine feature to derive new features.
    2 > fractional part generation 
+   
+>>>>>  Categorical Data  feature preprocessing : - 
+
+Label Encoding - sklearn.preprocessing.LabelEncoder [S,C,Q] -> [2,1,3]
+               - pandas.factorize [S.C.Q] - [1,2,3]
+               
+Frequency Encoding - [[ encoding = titanic.groupby('Embarked').size()
+                        encoding = encoding/len(titanic)
+                        titanic['enc'] = titanic.Embarked.map(encoding)
+                      ]]
+                      
+                   - from scipy.stats import rankdata
+Onehot encoding - pandas.get_dummies
+                  sklearn.preprocessing.OneHotEncoding
+                  
+                      
+  
