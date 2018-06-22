@@ -59,5 +59,5 @@ Frequency Encoding - [[ encoding = titanic.groupby('Embarked').size()
 Onehot encoding - pandas.get_dummies
                   sklearn.preprocessing.OneHotEncoding
                   
-                      
+                       
   
